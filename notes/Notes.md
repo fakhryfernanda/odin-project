@@ -23,3 +23,16 @@ Other most common web development languages are:
 - Python
 
 **The main language that you use all depends on your specific project and the business goals that you have.** By identifying what these goals are, you should have a better idea of which languages are ideal when you are developing a website or application.
+
+
+# Elements and Tags
+
+Almost all elements on an HTML page are just pieces of content wrapped in opening and closing HTML tags. A full paragraph element looks like this:
+
+<img src="./images/element_diagram.png">
+
+
+# Other Articles
+
+- [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
