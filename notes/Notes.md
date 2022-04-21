@@ -24,12 +24,26 @@ Other most common web development languages are:
 
 **The main language that you use all depends on your specific project and the business goals that you have.** By identifying what these goals are, you should have a better idea of which languages are ideal when you are developing a website or application.
 
+<br><br>
 
 # Elements and Tags
 
 Almost all elements on an HTML page are just pieces of content wrapped in opening and closing HTML tags. A full paragraph element looks like this:
 
 <img src="./images/element_diagram.png">
+
+# Flexbox Growing and Shrinking
+
+## Flex Basis
+The `flex-basis` property specifies the initial length of a flexible item. The default value is `flex-basis: auto`.  Using `auto` as a flex-basis sets the initial main size of a flex item or tells the item to check for a width declaration (e.g. `width: 250px`).
+
+## Flex Grow
+The `flex-grow` property specifies how much the item will grow relative to the rest of the flexible items inside the same container if there is remaining space in the container. The default value is `flex-grow: 0`.
+
+## Flex Shrink
+The `flex-shrink` property specifies how the item will shrink relative to the rest of the flexible items inside the same container. The dfault is `flex-shrink: 1`.
+
+<br><br>
 
 
 # Other Articles
