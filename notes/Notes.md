@@ -7,6 +7,33 @@
     }
 </style>
 
+# Asking for Help
+
+## Tips for Getting The Best Help Possible
+
+1. Always provide your code and the surrounding context.
+1. Ask about the problem at hand, not the solution itself.
+1. Don’t take asking for more context to heart!
+
+<br><br>
+
+# How to be Great at Asking Coding Questions
+
+1. Understand the code to the best of your ability.
+1. Clearly describe the problem.
+1. Provide the code that illustrates the problem.
+1. Make sure the code you’re sharing can reproduce the problem.
+1. Format your code consistently.
+1. Check yourself for typos.
+1. Explain what you did to troubleshoot the problem.
+1. Explain what you think the problem might be.
+1. Proofread your question.
+1. Send updates and remember this will not be your last question.
+
+[Read more](https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603)
+
+<br><br>
+
 # How Does the Internet Works?
 
 ## Summary
