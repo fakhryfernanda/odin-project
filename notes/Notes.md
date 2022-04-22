@@ -1,10 +1,57 @@
 <style>
+    
     img {
         display: block;
         margin: 50px auto;
-        height: 400px;
+        max-height: 400px;
     }
 </style>
+
+# How Does the Internet Works?
+
+## Summary
+The **Internet** is the backbone of the Web, the technical infrastructure that makes the Web possible. At its most basic, the Internet is a large network of computers which communicate all together. Internet is a way to connect computers all together and ensure that, whatever happens, they find a way to stay connected.
+
+[Read more](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
+
+<br><br>
+
+# What is the difference between webpage, website, web server, and search engine?
+
+## Summary
+Basic terms to understand
+- Web page: A document which can be displayed in a web browser such as Google Chrome. These are also often called just "pages."
+- Website: A collection of web pages which are grouped together and usually connected together in various ways. Often called a "web site" or a "site."
+- Web server: A computer that hosts a website on the Internet.
+- Search engine: A web service that helps you find other web pages, such as Google, Bing, Yahoo, or DuckDuckGo. Search engines are normally accessed through a web browser (e.g. you can perform search engine searches directly in the address bar of Firefox, Chrome, etc.) or through a web page (e.g. [bing.com](bing.com) or [duckduckgo.com](duckduckgo.com)).
+
+[Read more](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines)
+
+<br><br>
+
+# How the Web works
+
+## Clients and servers
+Computers connected to the web are called **clients** and **servers**. A simplified diagram of how they interact might look like this:
+
+<img src="./images/simple-client-server.png" height="200px">
+
+- Clients are the typical web user's internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and web-accessing software available on those devices (usually a web browser like Firefox or Chrome).
+- Servers are computers that store webpages, sites, or apps. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.
+
+## IP Address and DNS
+
+Real web addresses aren't the nice, memorable strings you type into your address bar to find your favorite websites. They are special numbers that look like this: `63.245.215.20`.
+
+This is called an IP address, and it represents a unique location on the web. However, it's not very easy to remember. That's why Domain Name Servers were invented. These are special servers that match up a web address you type into your browser (like "mozilla.org") to the website's real (IP) address.
+
+## Packets Explained
+
+Basically, when data is sent across the web, it is sent in thousands of small chunks. There are multiple reasons why data is sent in small packets. They are sometimes dropped or corrupted, and it's easier to replace small chunks when this happens. Additionally, the packets can be routed along different paths, making the exchange faster and allowing many different users to download the same website at the same time. If each website was sent as a single big chunk, only one user could download it at a time, which obviously would make the web very inefficient and not much fun to use.
+
+[Read more](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#clients_and_servers)
+
+<br><br>
 
 # HTML vs CSS vs Javascript
 
