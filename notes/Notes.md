@@ -119,51 +119,8 @@ The `flex-shrink` property specifies how the item will shrink relative to the re
 
 <br><br>
 
-# CSS Grid
-
-## Creating Grid
-
-```css
-.container {
-  display: grid;
-}
-```
-
-## Many Ways to Create Columns and Rows
-
-```css
-.container {
-  display: grid;
-  grid-template-columns: 50px 50px 50px;
-  grid-template-rows: 50px 50px;
-}
-```
-```css
-// Shorthand method
-.container {
-  display: grid;
-  grid-template: 50px 50px / 50px 50px 50px;
-}
-```
-
-## Grid auto rows
-
-The `grid-auto-rows` property sets a size for all rows in a grid container. This property affects only rows with the size not set.
-
-## Questions
-
-1. Describe what happens when you have more content than defined tracks. *(Grid cell will be added in new row)*
-1. How could you change the size for those undefined tracks? *(Using `grid-auto-rows` or `grid-auto-columns`)*
-1. Explain the difference between a track and a line. *(Track itu baris atau kolom, line itu garis batas atau border dari grid item)*
-1. What is the smallest unit on a grid? *(cell)*
-1. What kind of value do we give to the `grid-column-start` or `grid-column-end` properties? *(Posisi line pertama dan terakhir grid item)*
-1. Which property can we use to combine all the start and end values for a grid item? *(`grid-area`)*
-1. Which grid container property can map out a visual structure of grid items? *(`grid-template-area`)*
-
-<br><br>
-
 # Other Articles
 
 - [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-- 
+- [Grid Garden](https://cssgridgarden.com/)
 
