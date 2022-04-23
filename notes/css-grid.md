@@ -61,3 +61,14 @@ Conversely, the grid column size will be calculated based on the larger of the t
 ## Dynamic minimum and maximum sizes
 - `minmax()`: CSS function that is specifically used with Grid. It is a relatively straightforward function that only takes in two arguments, minimum and maximum size
 - `clamp()`: Unlike minmax(), clamp() is a CSS function that can be used anywhere, not just within a grid container. <br>The syntax is as follows: `clamp(minimum-size, ideal-size, maximum-size)`. What this does is allow our item to resize itself until it reaches one of the minimum or maximum threshold values.
+
+## auto-fit and auto-fill
+``` css
+.grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+```
+
+So what’s going on here specifically with `repeat(auto-fit, minmax(150px, 1fr));`? Simple! Remember that `auto-fit` will return the **highest positive integer** without overflowing the grid.
+
+So first, the browser has to know how wide our grid is: in this case, it’s just the window’s width (minus margins) because we didn’t explicitly set it. For the sake of this example, let’s pretend like our window is currently `500px` wide. Second, the browser needs to know how many grid column tracks could possibly fit in that width. To do this, it uses the minimum value in our `minmax()` function, since that will yield the highest number of items, which is `150px`. If our window is `500px` wide, this means our grid will render 3 columns. But wait, there’s more! Once the browser has determined how many columns we can fit, it then resizes our columns up to the maximum value allowed by our `minmax()` function. In this case, our max size is `1fr`, so all three columns will be given an equal allotment of the space available
