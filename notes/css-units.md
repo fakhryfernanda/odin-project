@@ -21,11 +21,22 @@ Relative units are units that can change based on their context. There are sever
 | Unit | Relative to |
 | ---- | ----------- |
 | `em` | Font size of the parent, in the case of typographical properties like `font-size`,<br> and font size of the element itself, in the case of other properties like `width`. |
+| `rem` | Font size of the root element. |
 | `ex` | x-height of the element's font. |
 | `ch` | The advance measure (width) of the glyph "0" of the element's font. |
-| `rem` | Font size of the root element. |
 | `lh` | Line height of the element. |
 | `vw` | 1% of the viewport's width. |
 | `vh` | 1% of the viewport's height. |
 | `vmin` | 1% of the viewport's smaller dimension. |
 | `vmax` | 1% of the viewport's larger dimension. |
+
+## Suggestions
+
+Use `rem` for `font-size` and `px` for everything else. Using `em` is more confusing than it’s really worth and can lead to confusing size-related bugs.
+
+<br><br>
+
+# Other Article
+
+- [CSS units: em, rem, and px](https://codyloyd.com/2021/css-units/)
+- [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
