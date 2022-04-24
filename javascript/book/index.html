@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Book(title, author, pages, isRead) {
+            this.title = title
+            this.author = author
+            this.pages = pages
+            this.isRead = isRead // boolean
+            isRead ? isRead = 'read already' : isRead = 'not read yet'
+
+            this.info = () => `${title} by ${author}, ${pages} pages, ${isRead}.`
+        }
+    </script>
+</body>
+</html>
