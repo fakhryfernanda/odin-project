@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Selection Elements</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://httpbin.org/post" method="post">
+        <label for="car">Car:</label>
+        <select id="car" name="Car">
+            <option value="mercedes">Mercedes</option>
+            <option value="tesla" selected>Tesla</option>
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+            <option value="mini">Mini</option>
+            <option value="ford">Ford</option>
+        </select>
+
+        <select name="fashion">
+            <optgroup label="Clothing">
+              <option value="t_shirt">T-Shirts</option>
+              <option value="sweater">Sweaters</option>
+              <option value="coats">Coats</option>
+            </optgroup>
+            <optgroup label="Foot Wear">
+              <option value="sneakers">Sneakers</option>
+              <option value="boots">Boots</option>
+              <option value="sandals">Sandals</option>
+            </optgroup>
+        </select>
+
+        <div class="radio-button">
+            <h3>Radio Buttons</h3>
+            <div>
+                <input type="radio" id="child" name="ticket_type" value="child">
+                <label for="child">Child</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="adult" name="ticket_type" value="adult">
+                <label for="adult">Adult</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="senior" name="ticket_type" value="senior" checked>
+                <label for="senior">Senior</label>
+            </div>
+        </div>
+
+        <div class="checkboxes">
+            <h3>Checkboxes - Mulitple Choices</h3>
+            <div>
+                <input type="checkbox" id="sausage" name="topping" value="sausage">
+                <label for="sausage">Sausage</label>
+            </div>
+    
+            <div>
+                <input type="checkbox" id="onions" name="topping" value="onions">
+                <label for="onions">Onions</label>
+            </div>
+    
+            <div>
+                <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+            </div>
+    
+            <div>
+                <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+            </div>
+        </div>
+
+        <div>
+            <h3>Checkboxes - True or False</h3>
+            <input type="checkbox" id="newsletter" name="news_letter">
+            <label for="newsletter">Send me the news letter</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
