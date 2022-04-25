@@ -5,11 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Basic</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
     <form action="http://httpbin.org/post" method="post">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="first_name" placeholder="Bob...">
+
+        <label for="user_email">Email Address:</label>
+        <input type="email" id="user_email" name="email" placeholder="you@example.com">
+
+        <label for="user_password">Password:</label>
+        <input type="password" id="user_password" name="password">
+
+        <label for="amount">Age:</label>
+        <input type="number" id="amount" name="amount">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="comment">Comment:</label>
+        <textarea rows="10" cols="40" id="comment" name="comment">Some initial content</textarea>
+
         <button type="submit">Submit</button>
     </form>
 </body>
