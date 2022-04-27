@@ -10,14 +10,17 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            /* width: 500px; */
         }
     </style>
+
 </head>
 <body>
     <form action="http://httpbin.org/post" method="post">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="first_name" placeholder="Bob...">
+        <label for="full-name">First Name:</label>
+        <input type="text" id="full-name" name="full_name">
+
+        <label for="username">Username*:</label>
+        <input type="text" id="username" name="username" required minlength="4" maxlength="12">
 
         <label for="user_email">Email Address:</label>
         <input type="email" id="user_email" name="email" placeholder="you@example.com">
@@ -26,7 +29,7 @@
         <input type="password" id="user_password" name="password">
 
         <label for="amount">Age:</label>
-        <input type="number" id="amount" name="amount">
+        <input type="number" id="amount" name="amount" value="12" min="10" max="20">
 
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob">
