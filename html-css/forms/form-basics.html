@@ -10,7 +10,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            width: 500px;
+            /* width: 500px; */
         }
     </style>
 </head>
@@ -35,6 +35,63 @@
         <textarea rows="10" cols="40" id="comment" name="comment">Some initial content</textarea>
 
         <button type="submit">Submit</button>
+    </form>
+
+    <h2>Organizing Form</h2>
+    <form>
+        <fieldset>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name">
+          
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name">
+          </fieldset>
+
+          <fieldset>
+            <legend>Contact Details</legend>
+          
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number">
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </fieldset>
+          
+          <fieldset>
+            <legend>Delivery Details</legend>
+          
+            <label for="street_address">Street Address:</label>
+            <input type="text" id="street_address" name="street_address">
+          
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+          
+            <label for="zip_code">Zip Code:</label>
+            <input type="text" id="zip_code" name="zip_code">
+          </fieldset>
+
+          <fieldset>
+            <legend>What would you like to drink?</legend>
+          
+            <div>
+              <input type="radio" name="drink" id="coffee" value="coffee">
+              <label for="coffee">Coffee</label>
+            </div>
+          
+            <div>
+              <input type="radio" name="drink" id="tea" value="tea">
+              <label for="tea">Tea</label>
+            </div>
+          
+            <div>
+              <input type="radio" name="drink" id="soda" value="soda">
+              <label for="soda">Soda</label>
+            </div>
+          
+          </fieldset>
     </form>
 </body>
 </html>
