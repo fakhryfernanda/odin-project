@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 # Objects and Object Constructors
 
 ## Object Literal
